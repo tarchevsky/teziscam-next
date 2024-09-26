@@ -20,7 +20,7 @@ const Header = () => {
 	}, [isMenuActive])
 
 	return (
-		<header className='relative flex justify-between md:justify-between md:gap-16 items-center py-4'>
+		<header className='relative flex justify-between md:justify-between md:gap-16 items-center py-4 xl:mb-14'>
 			<Link
 				href='/'
 				className='text-5xl font-medium'
