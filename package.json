@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource-variable/lora": "^5.1.0",
+    "@fontsource-variable/montserrat": "^5.1.0",
+    "@fontsource-variable/roboto-flex": "^5.1.0",
     "@fontsource/poiret-one": "^5.0.21",
     "@fontsource/roboto": "^5.0.14",
     "@types/node": "20.12.2",

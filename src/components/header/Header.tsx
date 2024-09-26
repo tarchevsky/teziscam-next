@@ -21,7 +21,11 @@ const Header = () => {
 
 	return (
 		<header className='relative flex justify-between md:justify-between md:gap-16 items-center py-4'>
-			<Link href='/' className='text-5xl font-medium'>
+			<Link
+				href='/'
+				className='text-5xl font-medium'
+				style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
+			>
 				Tezisc<span style={{ fontFamily: 'Poiret One, sans-serif' }}>Q</span>m
 			</Link>
 			<nav
@@ -29,10 +33,11 @@ const Header = () => {
 					{ [styles.active]: isMenuActive },
 					'fixed md:static z-10 w-full h-full md:h-auto end-0 bottom-0 -translate-y-full md:translate-y-0 opacity-0 md:opacity-100 transition-all duration-300 ease-out'
 				)}
+				style={{ fontFamily: '"Montserrat Variable", sans-serif' }}
 			>
 				<ul
 					tabIndex={0}
-					className='absolute md:static menu justify-between w-full flex-nowrap gap-5 md:menu-horizontal start-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:translate-y-0 md:translate-x-0 uppercase font-medium'
+					className='pt-4 absolute md:static menu justify-between w-full flex-nowrap gap-5 md:menu-horizontal start-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:translate-y-0 md:translate-x-0'
 				>
 					<li
 						className={cn(
@@ -40,7 +45,10 @@ const Header = () => {
 							'block text-center opacity-0 md:opacity-100'
 						)}
 					>
-						<Link className='px-[10px] btn btn-ghost' href='/dev'>
+						<Link
+							className='px-[10px] btn btn-ghost text-xl font-light'
+							href='/dev'
+						>
 							Веб-разработка
 						</Link>
 					</li>
@@ -50,7 +58,10 @@ const Header = () => {
 							'block text-center opacity-0 md:opacity-100'
 						)}
 					>
-						<Link className='px-[10px] btn btn-ghost' href='/video'>
+						<Link
+							className='px-[10px] btn btn-ghost text-xl font-light'
+							href='/video'
+						>
 							Видео
 						</Link>
 					</li>
@@ -60,7 +71,10 @@ const Header = () => {
 							'block text-center opacity-0 md:opacity-100'
 						)}
 					>
-						<Link className='px-[10px] btn btn-ghost' href='/design'>
+						<Link
+							className='px-[10px] btn btn-ghost text-xl font-light'
+							href='/design'
+						>
 							Дизайн
 						</Link>
 					</li>
@@ -70,7 +84,10 @@ const Header = () => {
 							'block text-center opacity-0 md:opacity-100'
 						)}
 					>
-						<Link className='px-[10px] btn btn-ghost' href='/ux'>
+						<Link
+							className='px-[10px] btn btn-ghost text-xl font-light'
+							href='/ux'
+						>
 							UX
 						</Link>
 					</li>
@@ -80,7 +97,10 @@ const Header = () => {
 							'block text-center opacity-0 md:opacity-100'
 						)}
 					>
-						<Link className='px-[10px] btn btn-ghost' href='/text'>
+						<Link
+							className='px-[10px] btn btn-ghost text-xl font-light'
+							href='/text'
+						>
 							Текст
 						</Link>
 					</li>
@@ -90,7 +110,10 @@ const Header = () => {
 							'block text-center opacity-0 md:opacity-100'
 						)}
 					>
-						<Link className='px-[10px] btn btn-ghost' href='/contacts'>
+						<Link
+							className='px-[10px] btn btn-ghost text-xl font-light'
+							href='/contacts'
+						>
 							Контакты
 						</Link>
 					</li>

@@ -174,6 +174,21 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
   integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
+"@fontsource-variable/lora@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/lora/-/lora-5.1.0.tgz#1b1f6a1b73327c910d780ec81178efd1c4c9314c"
+  integrity sha512-dYb/q3hMuabXDy3yHTtjIn+nzYIJ+jguULrPelHPBfGFlvwTI0HAETP+tZm/0aRISD7q2nWTK3tQA8GFZRDTmg==
+
+"@fontsource-variable/montserrat@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/montserrat/-/montserrat-5.1.0.tgz#627c3b570be6389170784563628a27173788474b"
+  integrity sha512-1bloVBKJx/ABBmF+/VzhJZDLzaDNUxw/8Pt5AOgfKL6N3t1fAhwtJBb1gdqU7ABckSNLsKf572A5Inv9YneRug==
+
+"@fontsource-variable/roboto-flex@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/roboto-flex/-/roboto-flex-5.1.0.tgz#27a88f659e546922f95fb9a832612ae76bf2fb6e"
+  integrity sha512-TwH8+uOwBqIjxtvTc+kp7ywyH7V7bDLbAXrEQg2SoCTJ6m2pn00x7ULioTTzDEvek+XpbqIf8gbKE1zlcONNGg==
+
 "@fontsource/poiret-one@^5.0.21":
   version "5.0.21"
   resolved "https://registry.yarnpkg.com/@fontsource/poiret-one/-/poiret-one-5.0.21.tgz#723965a6a33b679ee1047a068ae3328bf8411072"
