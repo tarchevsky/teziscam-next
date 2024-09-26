@@ -1,0 +1,15 @@
+.content {
+  background: linear-gradient(180deg, #1F201D 0%, rgba(115, 115, 115, 0.80) 75.5%);
+}
+
+.grid {
+  grid-template-columns: 1fr auto;
+}
+
+.heading {
+  font-family: 'Roboto Flex Variable', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}

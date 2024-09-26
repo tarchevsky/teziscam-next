@@ -1,19 +1,49 @@
 import { HeroProps } from '@/types'
 import Image from 'next/image'
+import Htag from '@/components/Htag/Htag'
+import cn from 'clsx'
+import styles from './Hero.module.scss'
 
-const Hero = ({
-	title,
-	buttonText,
-	alt,
-	subtitle,
-	src,
-	unoptimized
-}: HeroProps) => {
+const Hero = ({ title, alt, src, unoptimized }: HeroProps) => {
 	return (
-		<main className='hero cont md:min-h-[80vh]'>
-			<div className='relative hero-content flex-col-reverse items-start lg:items-center lg:flex-row'>
+		<main className='hero place-items-stretch cont'>
+			<div
+				className={cn(
+					styles.grid,
+					'relative hero-content grid justify-between gap-14 p-0'
+				)}
+			>
+				<div className='flex flex-col gap-4'>
+					<Htag tag='h1'>
+						<span
+							className='text-black font-extrabold'
+							style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
+						>
+							01
+						</span>{' '}
+						<br />
+						{title}
+					</Htag>
+					<div
+						className={cn(
+							styles.content,
+							'pt-16 pb-32 px-10 rounded-[30px] flex flex-col gap-16'
+						)}
+					>
+						<Htag
+							tag='h2'
+							className={cn(styles.heading, 'text-base-100 xl:text-5xl')}
+						>
+							Создаем современные минималистичные сайты и веб-приложения на
+							React
+						</Htag>
+						<p className={'text-base-100 xl:text-2xl font-normal'}>
+							Молниеносная скорость загрузки и безупречный пользовательский опыт
+						</p>
+					</div>
+				</div>
 				<Image
-					className='lg:w-1/2 h-[300px] md:h-[600px] md:min-w-[600px] object-cover rounded-box shadow-2xl'
+					className='object-cover'
 					src={src}
 					alt={alt}
 					width={400}
@@ -21,15 +51,6 @@ const Hero = ({
 					priority
 					unoptimized={unoptimized}
 				/>
-				<div className='md:relative lg:ml-[-100px] z-10'>
-					<h1 className='text-5xl font-extrabold'>{title}</h1>
-					{subtitle ? <p>{subtitle}</p> : null}
-					{buttonText ? (
-						<button className='btn btn-primary btn-lg mt-3'>
-							{buttonText}
-						</button>
-					) : null}
-				</div>
 			</div>
 		</main>
 	)
