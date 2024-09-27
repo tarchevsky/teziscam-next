@@ -5,6 +5,7 @@ import Hero from '@/components/hero/Hero'
 import Htag from '@/components/Htag/Htag'
 import Point from '@/components/point/Point'
 import Blockquote from '@/components/blockquote/Blockquote'
+import BgHtag from '@/components/bgHtag/BgHtag'
 
 const HomePage: NextPage = () => {
 	return (
@@ -55,7 +56,7 @@ const HomePage: NextPage = () => {
 					изменениям среды.
 				</Point>
 			</FadeIn>
-			<FadeIn className={'cont'}>
+			<FadeIn className={'cont mb-[140px]'}>
 				<Htag tag='h3'>
 					<span
 						className='text-black font-extrabold'
@@ -66,32 +67,116 @@ const HomePage: NextPage = () => {
 					<br />
 					Зарождение и онтогенез
 				</Htag>
-				<Point className={'pt-32'}>
-					идентифицируем задачу,
+				<div className='relative'>
+					<BgHtag tag='h3'>
+						Что <br />
+						мы <br />
+						cдела
+						<br />
+						ем?
+					</BgHtag>
+					<Point className={'pt-32 xl:pl-[20vw] xl:text-3xl w-full max-w-full'}>
+						идентифицируем задачу,
+						<br />
+						проведем брифинг,
+						<br />
+						создадим прототип,
+						<br />
+						утвердим дизайн-макет,
+						<br />
+						подготовим платформу,
+						<br />
+						подберем решения, <br />
+						<br />
+						осуществим верстку и наполнение страниц,
+						<br />
+						оптимизируем код,
+						<br />
+						протестируем формы обратной связи,
+						<br />
+						подключим админ-панель,
+						<br />
+						сервисы аналитики и метрики посещений,
+						<br />
+						создадим и настроим сервер и перенесем на него проект, подключим
+						домен
+						<br />
+						адаптируем к показу на разных устройствах
+					</Point>
+				</div>
+			</FadeIn>
+			<FadeIn className={'cont mb-[140px]'}>
+				<Htag tag='h3'>
+					<span
+						className='text-black font-extrabold'
+						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
+					>
+						05
+					</span>{' '}
 					<br />
-					проведем брифинг,
+					Жизненный цикл и дискуссия
+				</Htag>
+				<div className='relative'>
+					<BgHtag tag='h3'>
+						Как <br />
+						мы <br />
+						cдела
+						<br />
+						ем?
+					</BgHtag>
+					<Point
+						className={'pt-32 xl:pl-[20vw] xl:text-3xl w-full max-w-[53vw]'}
+					>
+						Мы опираемся на методологию Бережливого стартапа, когда работа
+						начинается с минимально-жизнеспособного продукта, что позволяет
+						быстро проверить жизнеспособность идеи, минимизировать риски и
+						эффективно использовать ресурсы.
+					</Point>
+				</div>
+			</FadeIn>
+			<FadeIn className={'cont mb-[70px]'}>
+				<Htag tag='h2'>
+					<span
+						className='text-black font-extrabold'
+						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
+					>
+						06
+					</span>{' '}
 					<br />
-					создадим прототип,
+					Живая система и её особенности
+				</Htag>
+				<Point className={'pt-8'}>
+					Наш взгляд <br />
 					<br />
-					утвердим дизайн-макет,
+					Каждый созданный нами веб-проект - это живой организм, который
+					обладает жизненным циклом - растет, развивается, адаптируется к
+					изменениям среды.
+					<br /> <br />
+					Человек - как совокупность общественных отношений развивается
+					динамично. Непрерывно изучая человека, его образ мысли, поведение,
+					способы взаимодействия со средой в ее интенсивности, мы можем
+					экологично и системно развивать и внедрять цифровые технологии во всех
+					областях жизни. В мире, где человек и гаджет становятся неразделимы,
+					приоритет остается в нравственном осмыслении жизни и общечеловеческих
+					ценностей. <br />
 					<br />
-					подготовим платформу,
+					Наш стиль - непрерывное усовершенствование и принятие вызовов.
+				</Point>
+			</FadeIn>
+			<FadeIn className={'cont mb-[70px]'}>
+				<Htag tag='h2'>
+					<span
+						className='text-black font-extrabold'
+						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
+					>
+						07
+					</span>{' '}
 					<br />
-					подберем решения, <br />
-					<br />
-					осуществим верстку и наполнение страниц,
-					<br />
-					оптимизируем код,
-					<br />
-					протестируем формы обратной связи,
-					<br />
-					подключим админ-панель,
-					<br />
-					сервисы аналитики и метрики посещений,
-					<br />
-					создадим и настроим сервер и перенесем на него проект, подключим домен
-					<br />
-					адаптируем к показу на разных устройствах
+					Технологичесская синглуярность: прорыв
+				</Htag>
+				<Point className={'pt-8'}>
+					React, Next JS, PostgreSQL, Prisma, Framer Motion, SCSS, Tailwind,
+					Insomnia, GraphQL
 				</Point>
 			</FadeIn>
 		</>
