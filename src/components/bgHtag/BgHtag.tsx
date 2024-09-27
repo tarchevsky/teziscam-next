@@ -1,36 +1,33 @@
 import { HtagProps } from '@/types'
 import styles from './BgHtag.module.scss'
 import cn from 'clsx'
-import React from 'react'
+import React, { Fragment } from 'react'
 
-const BgHtag = ({ tag, children }: HtagProps) => {
-	const content = typeof children === 'string' ? children : ''
-
-	switch (tag) {
-		case 'h3':
-			return (
-				<h3
-					className={cn(styles.bgHtag, 'text-[#F5E3D7]')}
-					dangerouslySetInnerHTML={{ __html: content }}
-				/>
-			)
-		case 'h4':
-			return (
-				<h4
-					className={cn(styles.bgHtag, 'text-[#F5E3D7]')}
-					dangerouslySetInnerHTML={{ __html: content }}
-				/>
-			)
-		case 'h5':
-			return (
-				<h5
-					className={cn(styles.bgHtag, 'text-[#F5E3D7]')}
-					dangerouslySetInnerHTML={{ __html: content }}
-				/>
-			)
-		default:
-			return null
+const BgHtag = ({ tag, children, className }: HtagProps) => {
+	const Tag = tag
+	const renderContent = () => {
+		if (typeof children === 'string') {
+			return children.split('<br />').map((text, index, array) => (
+				<Fragment key={index}>
+					{text}
+					{index < array.length - 1 && <br />}
+				</Fragment>
+			))
+		}
+		return children
 	}
+
+	return (
+		<Tag
+			className={cn(
+				styles.BgHtag,
+				'text-[#F5E3D7] text-right absolute left-0 -z-10',
+				className
+			)}
+		>
+			{renderContent()}
+		</Tag>
+	)
 }
 
 export default BgHtag
