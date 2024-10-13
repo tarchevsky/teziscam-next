@@ -12,6 +12,7 @@ module.exports = {
 		extend: {}
 	},
 	plugins: [
+		require('@tailwindcss/typography'),
 		addVariablesForColors,
 		require('daisyui'),
 		function ({ addUtilities }: any) {
@@ -24,12 +25,12 @@ module.exports = {
 						'padding-right': '40px'
 					},
 					'@screen md': {
-						'padding-left': '100px',
-						'padding-right': '100px'
-					},
-					'@screen 2xl': {
 						'padding-left': '200px',
 						'padding-right': '200px'
+					},
+					'@screen 2xl': {
+						'padding-left': '250px',
+						'padding-right': '250px;'
 					}
 				}
 			}
@@ -37,7 +38,18 @@ module.exports = {
 		}
 	],
 	daisyui: {
-		themes: ['cupcake', 'dim'], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+		themes: [
+			{
+				cupcake: {
+					...require('daisyui/src/theming/themes')['cupcake'],
+					'--bg-base-100': '#fff',
+					backgroundColor: '--bg-base-100'
+				},
+				dim: {
+					...require('daisyui/src/theming/themes')['dim']
+				}
+			}
+		], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
 		base: true, // applies background color and foreground color for root element by default
 		styled: true, // include daisyUI colors and design decisions for all components
 		utils: true, // adds responsive and modifier utility classes
