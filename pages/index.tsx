@@ -3,7 +3,7 @@ import FadeIn from '@/components/fadeIn/FadeIn'
 import Meta from '@/components/meta/Meta'
 import Hero from '@/components/hero/Hero'
 import Htag from '@/components/Htag/Htag'
-import Point from '@/components/point/Point'
+import P from '@/components/P/P'
 import Blockquote from '@/components/blockquote/Blockquote'
 import BgHtag from '@/components/bgHtag/BgHtag'
 
@@ -27,10 +27,10 @@ const HomePage: NextPage = () => {
 					<br />
 					Интродукция
 				</Htag>
-				<Point className={'pt-8'}>
+				<P className={'pt-8'}>
 					Ваш сайт отражает корпоративные ценности и обеспечивает эффективную
 					коммуникацию с клиентами.
-				</Point>
+				</P>
 				<Blockquote>
 					Мы позаботимся о передовых технологических решениях и визуализации,
 					чтобы поддержать Ваш успех
@@ -47,14 +47,14 @@ const HomePage: NextPage = () => {
 					<br />
 					Пролог
 				</Htag>
-				<Point className={'pt-8'}>
+				<P className={'pt-8'}>
 					И стартапы, и большие корпорации воплощают свои задумки в успешные
 					проекты. <br />
 					<br />
 					Каждый созданный нами веб-проект - это живой организм, который
 					обладает жизненным циклом - растет, развивается, адаптируется к
 					изменениям среды.
-				</Point>
+				</P>
 			</FadeIn>
 			<FadeIn className={'cont mb-[140px]'}>
 				<Htag tag='h3'>
@@ -67,15 +67,14 @@ const HomePage: NextPage = () => {
 					<br />
 					Зарождение и онтогенез
 				</Htag>
-				<div className='relative'>
+				<div className='grid grid-cols-2 gap-10'>
 					<BgHtag tag='h3'>
-						Что <br />
-						мы <br />
+						Что мы <br />
 						cдела
 						<br />
 						ем?
 					</BgHtag>
-					<Point className={'pt-32 xl:pl-[20vw] xl:text-3xl w-full max-w-full'}>
+					<P className={'pt-16'}>
 						идентифицируем задачу,
 						<br />
 						проведем брифинг,
@@ -102,7 +101,7 @@ const HomePage: NextPage = () => {
 						домен
 						<br />
 						адаптируем к показу на разных устройствах
-					</Point>
+					</P>
 				</div>
 			</FadeIn>
 			<FadeIn className={'cont mb-[140px]'}>
@@ -114,24 +113,22 @@ const HomePage: NextPage = () => {
 						05
 					</span>{' '}
 					<br />
-					Жизненный цикл и дискуссия
+					Жизненный цикл и диалог
 				</Htag>
-				<div className='relative'>
+				<div className='grid grid-cols-2 gap-10'>
+					<P className={'pt-16'}>
+						Мы опираемся на методологию Бережливого стартапа, когда работа
+						начинается с минимально-жизнеспособного продукта, что позволяет
+						быстро проверить жизнеспособность идеи, минимизировать риски и
+						эффективно использовать ресурсы. Когда создана канва будущего сайта,
+						легче работать над содержанием.
+					</P>
 					<BgHtag tag='h3'>
-						Как <br />
-						мы <br />
+						Как мы <br />
 						cдела
 						<br />
 						ем?
 					</BgHtag>
-					<Point
-						className={'pt-32 xl:pl-[20vw] xl:text-3xl w-full max-w-[53vw]'}
-					>
-						Мы опираемся на методологию Бережливого стартапа, когда работа
-						начинается с минимально-жизнеспособного продукта, что позволяет
-						быстро проверить жизнеспособность идеи, минимизировать риски и
-						эффективно использовать ресурсы.
-					</Point>
 				</div>
 			</FadeIn>
 			<FadeIn className={'cont mb-[70px]'}>
@@ -145,7 +142,7 @@ const HomePage: NextPage = () => {
 					<br />
 					Живая система и её особенности
 				</Htag>
-				<Point className={'pt-8'}>
+				<P className={'pt-8'}>
 					Наш взгляд <br />
 					<br />
 					Каждый созданный нами веб-проект - это живой организм, который
@@ -161,7 +158,7 @@ const HomePage: NextPage = () => {
 					ценностей. <br />
 					<br />
 					Наш стиль - непрерывное усовершенствование и принятие вызовов.
-				</Point>
+				</P>
 			</FadeIn>
 			<FadeIn className={'cont mb-[70px]'}>
 				<Htag tag='h2'>
@@ -174,10 +171,10 @@ const HomePage: NextPage = () => {
 					<br />
 					Технологичесская синглуярность: прорыв
 				</Htag>
-				<Point className={'pt-8'}>
+				<P className={'pt-8'}>
 					React, Next JS, PostgreSQL, Prisma, Framer Motion, SCSS, Tailwind,
 					Insomnia, GraphQL
-				</Point>
+				</P>
 			</FadeIn>
 		</>
 	)
