@@ -18,13 +18,7 @@ const BgHtag = ({ tag, children, className }: HtagProps) => {
 	}
 
 	return (
-		<Tag
-			className={cn(
-				styles.BgHtag,
-				'text-[#F5E3D7] text-right absolute left-0 -z-10',
-				className
-			)}
-		>
+		<Tag className={cn(styles.BgHtag, 'text-[#F5E3D7] text-right', className)}>
 			{renderContent()}
 		</Tag>
 	)
