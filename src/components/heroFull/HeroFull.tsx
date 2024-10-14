@@ -27,8 +27,12 @@ const HeroFull = ({ title, alt, src, unoptimized }: HeroProps) => {
 						'pt-16 pb-32 px-10 rounded-[30px] flex flex-col gap-16'
 					)}
 				>
-					<div className={'grid grid-cols-2 gap-16 items-center'}>
-						<div className={'glass px-12 py-24 rounded-3xl'}>
+					<div className={'grid xl:grid-cols-2 xl:gap-16 items-center'}>
+						<div
+							className={
+								'glass px-4 py-4 sm:px-8 sm:py-10 xl:px-12 xl:py-24 rounded-3xl'
+							}
+						>
 							<Htag
 								tag='h2'
 								className={cn(styles.heading, 'text-base-100 xl:text-5xl')}
@@ -43,7 +47,7 @@ const HeroFull = ({ title, alt, src, unoptimized }: HeroProps) => {
 						</div>
 						<div
 							className={
-								'glass min-h-[40vh] px-12 py-24 grid items-center justify-center rounded-3xl'
+								'hidden xl:flex glass min-h-[40vh] px-12 py-24 grid items-center justify-center rounded-3xl'
 							}
 						>
 							<Image
