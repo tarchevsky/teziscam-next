@@ -14,7 +14,7 @@ const HomePage: NextPage = () => {
 			<Meta title='Главная' metaDesc='Описание страницы' />
 			<HeroFull
 				title='Главная'
-				src='/reactangle-main.png'
+				src='/rectangle-main.png'
 				alt='Картинка изображающая кнопку'
 			/>
 			<FadeIn className={'cont'}>
@@ -37,7 +37,7 @@ const HomePage: NextPage = () => {
 					чтобы поддержать Ваш успех
 				</Blockquote>
 			</FadeIn>
-			<FadeIn className={'cont'}>
+			<FadeIn className={'cont mb-16'}>
 				<Htag tag='h2'>
 					<span
 						className='text-black font-extrabold'
