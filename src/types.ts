@@ -58,7 +58,7 @@ export interface FigureProps {
 	unoptimized?: boolean
 }
 
-// Hero.tsx
+// Hero + HeroFull.tsx
 
 export interface HeroProps {
 	title: string

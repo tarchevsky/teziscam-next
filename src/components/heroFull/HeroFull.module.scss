@@ -1,0 +1,15 @@
+.content {
+  background: url(/karelia.png) center center/cover no-repeat;
+}
+
+.grid {
+  @apply flex flex-col items-start;
+}
+
+.heading {
+  font-family: 'Roboto Flex Variable', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}

@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import FadeIn from '@/components/fadeIn/FadeIn'
 import Meta from '@/components/meta/Meta'
-import Hero from '@/components/hero/Hero'
+import HeroFull from '@/components/heroFull/HeroFull'
 import Htag from '@/components/Htag/Htag'
 import P from '@/components/P/P'
 import Blockquote from '@/components/blockquote/Blockquote'
@@ -11,10 +11,10 @@ const HomePage: NextPage = () => {
 	return (
 		<>
 			<Meta title='Главная' metaDesc='Описание страницы' />
-			<Hero
+			<HeroFull
 				title='Главная'
-				src='/phone.png'
-				alt='Картинка схематично изображающая прототип сайта на мобильном устройстве'
+				src='/reactangle-main.png'
+				alt='Картинка изображающая кнопку'
 			/>
 			<FadeIn className={'cont'}>
 				<Htag tag='h2'>
