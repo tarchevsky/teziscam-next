@@ -7,6 +7,8 @@ import P from '@/components/P/P'
 import Blockquote from '@/components/blockquote/Blockquote'
 import BgHtag from '@/components/bgHtag/BgHtag'
 import TwoPhoto from '@/components/twoPhoto/TwoPhoto'
+import Image from 'next/image'
+import BlockquoteSimple from '@/components/blockquoteSimple/BlockquoteSimple'
 
 const HomePage: NextPage = () => {
 	return (
@@ -130,6 +132,26 @@ const HomePage: NextPage = () => {
 						<br />
 						ем?
 					</BgHtag>
+				</div>
+				<div
+					className={
+						'flex flex-col flex-col-reverse xl:flex-row xl-flex- items-center gap-12'
+					}
+				>
+					<Image
+						src='/prototype.png'
+						alt='Картинка прототипа сайта'
+						width={200}
+						height={450}
+						className={'w-[250px] h-full xl:w-full'}
+					/>
+					<BlockquoteSimple className={'uppercase'}>
+						При создании сайта сочетание гибких и бережливых методологий
+						разработки позволяет эффективно управлять ресурсами и быстро
+						адаптироваться к изменениям. Вместе они способствуют созданию более
+						качественного и востребованного продукта, снижая риски и увеличивая
+						шансы на успех.
+					</BlockquoteSimple>
 				</div>
 			</FadeIn>
 			<FadeIn className={'cont mb-[70px]'}>
