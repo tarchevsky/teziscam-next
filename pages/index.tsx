@@ -183,6 +183,24 @@ const HomePage: NextPage = () => {
 					Insomnia, GraphQL
 				</P>
 			</FadeIn>
+			<FadeIn className={'cont mb-[70px]'}>
+				<Htag tag='h2'>
+					<span
+						className='text-black font-extrabold'
+						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
+					>
+						08
+					</span>{' '}
+					<br />
+					Открытие и перспективы. Рост и развитие. Метаболизм и
+					производительность.
+				</Htag>
+				<P className={'pt-8'}>
+					Встреча клиента с сайтом, сбор обратной связи. Поддержка и обновления,
+					новая функциональность с целью наилучшего соответствовия потребностям
+					пользователей и изменениям в технологиях.
+				</P>
+			</FadeIn>
 		</>
 	)
 }
