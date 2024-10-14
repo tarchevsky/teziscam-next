@@ -6,6 +6,7 @@ import Htag from '@/components/Htag/Htag'
 import P from '@/components/P/P'
 import Blockquote from '@/components/blockquote/Blockquote'
 import BgHtag from '@/components/bgHtag/BgHtag'
+import TwoPhoto from '@/components/twoPhoto/TwoPhoto'
 
 const HomePage: NextPage = () => {
 	return (
@@ -142,24 +143,8 @@ const HomePage: NextPage = () => {
 					<br />
 					Живая система и её особенности
 				</Htag>
-				<P className={'pt-8'}>
-					Наш взгляд <br />
-					<br />
-					Каждый созданный нами веб-проект - это живой организм, который
-					обладает жизненным циклом - растет, развивается, адаптируется к
-					изменениям среды.
-					<br /> <br />
-					Человек - как совокупность общественных отношений развивается
-					динамично. Непрерывно изучая человека, его образ мысли, поведение,
-					способы взаимодействия со средой в ее интенсивности, мы можем
-					экологично и системно развивать и внедрять цифровые технологии во всех
-					областях жизни. В мире, где человек и гаджет становятся неразделимы,
-					приоритет остается в нравственном осмыслении жизни и общечеловеческих
-					ценностей. <br />
-					<br />
-					Наш стиль - непрерывное усовершенствование и принятие вызовов.
-				</P>
 			</FadeIn>
+			<TwoPhoto />
 			<FadeIn className={'cont mb-[70px]'}>
 				<Htag tag='h2'>
 					<span
