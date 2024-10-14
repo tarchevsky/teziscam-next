@@ -43,7 +43,15 @@ module.exports = {
 				cupcake: {
 					...require('daisyui/src/theming/themes')['cupcake'],
 					'--bg-base-100': '#fff',
-					backgroundColor: '--bg-base-100'
+					backgroundColor: '--bg-base-100',
+					'--glass-blur': '3px',
+					'.glass': {
+						'background-image':
+							'linear-gradient(\n' +
+							'        rgb(255 255 255 / var(--glass-opacity, 20%)) 50%,\n' +
+							'        rgb(0 0 0 / 0%) 100%\n' +
+							'      )'
+					}
 				},
 				dim: {
 					...require('daisyui/src/theming/themes')['dim']
