@@ -118,7 +118,7 @@ const HomePage: NextPage = () => {
 					<br />
 					Жизненный цикл и диалог
 				</Htag>
-				<div className='grid grid-cols-2 gap-10'>
+				<div className='grid grid-cols-2 gap-10 mb-16'>
 					<P className={'pt-16'}>
 						Мы опираемся на методологию Бережливого стартапа, когда работа
 						начинается с минимально-жизнеспособного продукта, что позволяет
