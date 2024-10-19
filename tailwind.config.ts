@@ -20,17 +20,13 @@ module.exports = {
 				'.cont': {
 					'padding-left': '16px',
 					'padding-right': '16px',
-					'@screen sm': {
+					'@screen md': {
 						'padding-left': '40px',
 						'padding-right': '40px'
 					},
-					'@screen md': {
-						'padding-left': '200px',
-						'padding-right': '200px'
-					},
 					'@screen 2xl': {
-						'padding-left': '250px',
-						'padding-right': '250px;'
+						'padding-left': '150px',
+						'padding-right': '150px;'
 					}
 				}
 			}
