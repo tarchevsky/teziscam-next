@@ -33,20 +33,6 @@ const HeroFull = ({ title, alt, src, unoptimized }: HeroProps) => {
 								опыт
 							</p>
 						</div>
-						<div
-							className={
-								'hidden xl:flex glass min-h-[40vh] px-12 py-24 grid items-center justify-center rounded-3xl'
-							}
-						>
-							<Image
-								src={src}
-								alt={alt}
-								width={171}
-								height={37}
-								className={'text-center'}
-								unoptimized
-							/>
-						</div>
 					</div>
 				</div>
 			</div>

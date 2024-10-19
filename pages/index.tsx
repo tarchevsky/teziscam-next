@@ -15,11 +15,13 @@ const HomePage: NextPage = () => {
 	return (
 		<>
 			<Meta title='Главная' metaDesc='Описание страницы' />
-			<HeroFull
-				title='Главная'
-				src='/rectangle-main.png'
-				alt='Картинка изображающая кнопку'
-			/>
+			<FadeIn className={'cont'}>
+				<HeroFull
+					title='Главная'
+					src='/rectangle-main.png'
+					alt='Картинка изображающая кнопку'
+				/>
+			</FadeIn>
 			<FadeIn className={'cont'}>
 				<Heading tag='h2' number='01' heading='Интродукция' />
 				<P className={'pt-8'}>
