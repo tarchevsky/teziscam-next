@@ -2,7 +2,6 @@ import { NextPage } from 'next'
 import FadeIn from '@/components/fadeIn/FadeIn'
 import Meta from '@/components/meta/Meta'
 import HeroFull from '@/components/heroFull/HeroFull'
-import Htag from '@/components/Htag/Htag'
 import P from '@/components/P/P'
 import Blockquote from '@/components/blockquote/Blockquote'
 import BgHtag from '@/components/bgHtag/BgHtag'
@@ -102,7 +101,7 @@ const HomePage: NextPage = () => {
 				</div>
 				<div
 					className={
-						'flex flex-col flex-col-reverse xl:flex-row xl-flex- items-center gap-12'
+						'flex flex-col-reverse xl:flex-row xl-flex- items-center gap-12'
 					}
 				>
 					<Image
