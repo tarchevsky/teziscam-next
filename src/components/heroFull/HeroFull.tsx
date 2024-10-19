@@ -9,18 +9,6 @@ const HeroFull = ({ title, alt, src, unoptimized }: HeroProps) => {
 	return (
 		<main className='hero'>
 			<div className={cn(styles.grid, 'relative hero-content p-0 max-w-full')}>
-				<FadeIn className={'cont w-full'}>
-					<Htag tag='h1' className={'text-left'}>
-						<span
-							className='text-black font-extrabold'
-							style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-						>
-							01
-						</span>{' '}
-						<br />
-						{title}
-					</Htag>
-				</FadeIn>
 				<div
 					className={cn(
 						styles.content,

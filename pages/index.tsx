@@ -9,6 +9,7 @@ import BgHtag from '@/components/bgHtag/BgHtag'
 import TwoPhoto from '@/components/twoPhoto/TwoPhoto'
 import Image from 'next/image'
 import BlockquoteSimple from '@/components/blockquoteSimple/BlockquoteSimple'
+import Heading from '@/components/heading/Heading'
 
 const HomePage: NextPage = () => {
 	return (
@@ -20,16 +21,7 @@ const HomePage: NextPage = () => {
 				alt='Картинка изображающая кнопку'
 			/>
 			<FadeIn className={'cont'}>
-				<Htag tag='h2'>
-					<span
-						className='text-black font-extrabold'
-						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-					>
-						02
-					</span>
-					<br />
-					Интродукция
-				</Htag>
+				<Heading tag='h2' number='01' heading='Интродукция' />
 				<P className={'pt-8'}>
 					Ваш сайт отражает корпоративные ценности и обеспечивает эффективную
 					коммуникацию с клиентами.
@@ -40,16 +32,7 @@ const HomePage: NextPage = () => {
 				</Blockquote>
 			</FadeIn>
 			<FadeIn className={'cont mb-16'}>
-				<Htag tag='h2'>
-					<span
-						className='text-black font-extrabold'
-						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-					>
-						03
-					</span>{' '}
-					<br />
-					Пролог
-				</Htag>
+				<Heading tag='h3' number='02' heading='Пролог' />
 				<P className={'pt-8'}>
 					И стартапы, и большие корпорации воплощают свои задумки в успешные
 					проекты. <br />
@@ -60,16 +43,7 @@ const HomePage: NextPage = () => {
 				</P>
 			</FadeIn>
 			<FadeIn className={'cont mb-[140px]'}>
-				<Htag tag='h3'>
-					<span
-						className='text-black font-extrabold'
-						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-					>
-						04
-					</span>{' '}
-					<br />
-					Зарождение и онтогенез
-				</Htag>
+				<Heading tag='h3' number='03' heading='Зарождение и онтогенез' />
 				<div className='grid grid-cols-2 gap-10'>
 					<BgHtag tag='h3'>
 						Что мы <br />
@@ -108,16 +82,7 @@ const HomePage: NextPage = () => {
 				</div>
 			</FadeIn>
 			<FadeIn className={'cont mb-[140px]'}>
-				<Htag tag='h3'>
-					<span
-						className='text-black font-extrabold'
-						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-					>
-						05
-					</span>{' '}
-					<br />
-					Жизненный цикл и диалог
-				</Htag>
+				<Heading tag='h3' number='04' heading='Жизненный цикл и диалог' />
 				<div className='grid grid-cols-2 gap-10 mb-16'>
 					<P className={'pt-16'}>
 						Мы опираемся на методологию Бережливого стартапа, когда работа
@@ -155,46 +120,31 @@ const HomePage: NextPage = () => {
 				</div>
 			</FadeIn>
 			<FadeIn className={'cont mb-[70px]'}>
-				<Htag tag='h2'>
-					<span
-						className='text-black font-extrabold'
-						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-					>
-						06
-					</span>{' '}
-					<br />
-					Живая система и её особенности
-				</Htag>
+				<Heading
+					tag='h3'
+					number='05'
+					heading='Живая система и её особенности'
+				/>
 			</FadeIn>
 			<TwoPhoto />
 			<FadeIn className={'cont mb-[70px]'}>
-				<Htag tag='h2'>
-					<span
-						className='text-black font-extrabold'
-						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-					>
-						07
-					</span>{' '}
-					<br />
-					Технологичесская синглуярность: прорыв
-				</Htag>
+				<Heading
+					tag='h3'
+					number='06'
+					heading='Технологичесская синглуярность: прорыв'
+				/>
 				<P className={'pt-8'}>
 					React, Next JS, PostgreSQL, Prisma, Framer Motion, SCSS, Tailwind,
 					Insomnia, GraphQL
 				</P>
 			</FadeIn>
 			<FadeIn className={'cont mb-[70px]'}>
-				<Htag tag='h2'>
-					<span
-						className='text-black font-extrabold'
-						style={{ fontFamily: '"Roboto Flex Variable", sans-serif' }}
-					>
-						08
-					</span>{' '}
-					<br />
-					Открытие и перспективы. Рост и развитие. Метаболизм и
-					производительность.
-				</Htag>
+				<Heading
+					tag='h3'
+					number='07'
+					heading='Открытие и перспективы. Рост и развитие. Метаболизм и
+					производительность.'
+				/>
 				<P className={'pt-8'}>
 					Встреча клиента с сайтом, сбор обратной связи. Поддержка и обновления,
 					новая функциональность с целью наилучшего соответствовия потребностям
